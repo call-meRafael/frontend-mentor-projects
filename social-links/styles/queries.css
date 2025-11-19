@@ -1,0 +1,111 @@
+@media (max-width: 320px) {
+    body {
+        display: grid;
+        min-height: 100dvh;
+        max-width: 320px;
+    }
+    .content-wrapper {
+        display: grid;
+        width: 100%;
+        padding-inline: .5rem;
+
+        & .card-box {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 130px 1fr auto);
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            min-height: 510px;
+            min-width: 18.125rem;
+
+
+            & .user-profile-box {
+                display: flex;
+                margin: auto;
+                max-width: 120px;
+                max-height: 120px;
+
+                & img {
+                    width: 100px;
+                    height: auto;
+                    flex: 0 1 auto;
+                }
+
+            }
+
+            & .social-links-box {
+                display: flex;
+                flex-direction: row;
+                margin-top: 1.5rem;
+
+                & a.social {
+                    flex: 0 1 auto;
+                }
+            }
+        }
+    }
+
+    
+}
+
+ 
+@media (min-width: 321px) and (max-width: 414px) {
+    
+    .content-wrapper {
+        padding-inline: 6px;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 376px) {
+    
+    body {
+        max-width: 376px;
+    }
+    .content-wrapper {
+        display: flex;
+        
+
+        
+        
+
+        & .card-box {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 160px auto 2fr;
+
+            min-width: 18.125rem;
+            min-height: fit-content;
+
+            
+
+            & .user-profile-box {
+                display: flex;
+                margin: auto;
+                max-width: 120px;
+                max-height: 120px;
+                
+                & img {
+                    width: 100px;
+                    height: auto;
+                    flex: 0 1 auto;
+                }
+            }
+
+
+            & .social-links-box {
+                display: grid;
+                
+                grid-template-columns: minmax(200px, 300px);
+                justify-items: center;
+
+                min-width: fit-content;
+                
+
+                
+            }
+        }
+    }
+}

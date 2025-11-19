@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    height: 100dvh;
+    font-family: var(--base-font);
+    color: #ffffff;
+    
+}
+
+:root {
+    --base-font: "Inter", sans-serif;
+
+    --darkest-bg-color: hsl(0, 0%, 8%);
+    --dark-bg-color: hsl(0, 0%, 12%);
+    --lightdark-bg-color: hsl(0, 0%, 20%);
+    
+    --shadow-m: inset
+    0 1px 2px #ffffff60,
+    0 2px 4px #00000030,
+    0 4px 8px #00000015;
+
+    --shadow-lg: inset
+    0 1px 2px #ffffff90,
+    0 2px 4px #00000045,
+    0 6px 10px #00000022;
+}
+
+a.social {
+    --bg-img: "";
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+
+    &[aria-label="github"] {
+        --bg-img: url(../assets/github-nopadding.svg);
+
+        &:hover {
+            --bg-img: url(../assets/SVGRepo_iconCarrier.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3rem;
+            height: 3rem;
+            
+        }
+    }
+
+    &[aria-label="frontend-mentor"] {
+        --bg-img: url(../assets/frontendmentor-svgrepo.svg);
+
+        &:hover {
+            --bg-img: url(../assets/orange-github.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3rem;
+            height: 3rem;
+            
+        }
+    }
+
+    &[aria-label="linkedin"] {
+        --bg-img: url(../assets/linkedin-base1.svg);
+
+        &:hover {
+            --bg-img: url(../assets/linkedin-icon-hover.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
