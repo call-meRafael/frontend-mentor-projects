@@ -54,6 +54,7 @@ main {
     background-color: var(--content-bg);
     grid-template-columns: .5fr;
     border-radius: 1.5rem;
+    width: 750px;
     
     flex: 0 1 auto;
     
@@ -83,6 +84,25 @@ main {
                 }
             }
         }
+
+        & .recipe__caption {
+            padding: 2rem;
+
+            & h1 {
+                font-family: var(--ff-headings);
+                font-size: clamp(2rem, 2vw, 3rem);
+                font-weight: 700;
+                color: var(--text-emphasis);
+                filter: drop-shadow(1px 1px 1px #1111116c);
+                
+            }
+
+            & p {
+                color: var(--text-base);
+                font-size: clamp(1rem, 1vw, 1rem);
+                line-height: 150%;
+            }
+        }
         
     }
 
@@ -90,11 +110,13 @@ main {
 
 }
 
-@media (width >= 376px) {
+@media (width >= 412px) {
     
     main {
         padding-block: 2.5rem;
     }
+
+   
 
     .top-content {
         padding: 2.5rem;
@@ -103,5 +125,14 @@ main {
             border-radius: 0.75rem;
             box-shadow: var(--shadow-m);
         }
+
+        & .recipe__caption {
+
+            & p {
+                color: red;
+            }
+        }
     }
+    
 }
+
