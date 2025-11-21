@@ -199,7 +199,6 @@ main {
 
     .divisor__line {
         margin-top: 3rem;
-        background-color: red;
         border: 1px solid lightgray;
     }
 }
