@@ -11,6 +11,7 @@
     --content-bg: hsl(0, 0%, 100%);
     --page-bg: hsl(30, 54%, 90%);
     --page-bg-alt: hsl(30, 18%, 87%);
+    --page-bg-alt-2: hsl(30, 18%, 94%);
 
     --text-base: hsl(30, 10%, 34%);
     --text-emphasis: hsl(24, 5%, 18%);
@@ -84,6 +85,7 @@ main {
                 
                 &:hover {
                     transform: scale(1.1);
+                    box-shadow: 1px 2px 1px #111111;
                 }
             }
         }
@@ -152,9 +154,56 @@ main {
         
     }
 
-    
 
 }
+
+.recipe__ingredients {
+    padding: 2rem;
+    /* background-color: var(--page-bg-alt-2); */
+    grid-area: span 1 / span 2;
+    
+
+
+    & h2 {
+        font-family: var(--ff-headings);
+        color: var(--heading);
+        font-weight: 700;
+        font-size: clamp(2rem, 2vw, 3rem);
+        
+        filter: drop-shadow(1px 1px var(--text-emphasis));
+    }
+
+    & ul {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+
+        list-style-type: none;
+        margin-top: 1rem;
+
+        & .ingredients_box {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            & img {
+                filter: drop-shadow(1px 1px #11111159);
+            }
+
+            & li {
+                color: var(--text-base);
+                font-size: clamp(1rem, 1vw, 1.275rem);
+            }
+        }
+    }
+
+    .divisor__line {
+        margin-top: 3rem;
+        background-color: red;
+        border: 1px solid lightgray;
+    }
+}
+
 
 @keyframes jumpOut {
     0% {
@@ -182,6 +231,10 @@ main {
         & .recipe__img_box {
             border-radius: 0.75rem;
             box-shadow: var(--shadow-m);
+
+            & img {
+                box-shadow: none;
+            }
         }
 
         & .recipe__caption {
