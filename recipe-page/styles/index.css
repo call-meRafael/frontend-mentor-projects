@@ -258,6 +258,7 @@ main {
 
     & table {
         
+        
         & tr {
 
             & .table_header {
@@ -270,6 +271,39 @@ main {
 
             & .table_paragraph {
                 color: var(--text-base);
+            }
+        }
+
+        & .data_row {
+            
+            color: var(--text-base);
+            font-size: clamp(1rem, 1vw, 1.275rem);
+            
+
+            & td {
+        
+                
+                padding: 1rem;
+                border-bottom: 1px solid lightgrey;
+
+                
+            }
+
+            & .fat_row {
+                border-bottom: none;
+
+                
+            }
+
+            & .fat_line {
+                border-bottom: none;
+            }
+
+            & td:last-child {
+                color: var(--heading);
+                font-weight: 700;
+                text-shadow: 1px 1px #11111133;
+                border-bottom: 1px solid lightgrey;
             }
         }
     }
