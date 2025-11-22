@@ -149,6 +149,10 @@ main {
 
                         animation: jumpOut 0.5s infinite ease-in-out;
                     }
+
+                    & span {
+                        font-weight: 500;
+                    }
                 }
             }
         }
@@ -251,6 +255,11 @@ main {
             padding-inline: 1rem;
             font-size: clamp(1rem, 1vw, 1.275rem);
 
+            & p {
+                color: var(--text-base);
+                font-size: clamp(1rem, 1vw, 1.275rem);
+            }
+
            
         }
     
@@ -331,14 +340,18 @@ footer {
     justify-content: flex-start;
     align-items: center;
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(1rem, 1vw, 1.125rem);
+    font-size: clamp(0.75rem, 1vw, 1.125rem);
     margin-top: 1rem;
     padding-inline: 2rem;
+    box-shadow: var(--shadow-m);
+    border-radius: .5rem;
+    max-width: fit-content;
 
     & span a {
         text-decoration: none;
         color: var(--heading-rose);
         font-weight: 700;
+        
 
         transition: all 0.4s ease;
         
