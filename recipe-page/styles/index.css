@@ -173,31 +173,39 @@ main {
         filter: drop-shadow(1px 1px var(--text-emphasis));
     }
 
-    & ul {
-        display: flex;
-        flex-flow: column wrap;
-        gap: 1rem;
-
-        list-style-type: none;
-        margin-top: 1rem;
-
-        & .ingredients_box {
+    & .ingredients_box {
+        
+        & ul {
             display: flex;
+            flex-flow: column wrap;
             gap: 1rem;
-            /* align-items: center; */
+    
+            list-style-type: none;
+            margin-top: 1rem;
+    
+            & .ingredients_box {
+                display: flex;
+                gap: 1rem;
+                /* align-items: center; */
 
-            & img {
-                filter: drop-shadow(1px 1px #1111111f);
-                width: 20px;
-                height: 20px;
-            }
-
-            & li {
-                color: var(--text-base);
-                font-size: clamp(1rem, 1vw, 1.275rem);
+                & p {
+                    color: var(--text-base);
+                }
+    
+                & img {
+                    filter: drop-shadow(1px 1px #1111111f);
+                    width: 20px;
+                    height: 20px;
+                }
+    
+                & li {
+                    color: var(--text-base);
+                    font-size: clamp(1rem, 1vw, 1.275rem);
+                }
             }
         }
     }
+
 
     .divisor__line {
         margin-top: 3rem;
