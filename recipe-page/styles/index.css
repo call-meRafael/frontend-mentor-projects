@@ -9,7 +9,7 @@
 
 :root {
     --content-bg: hsl(0, 0%, 100%);
-    --page-bg: hsl(30, 54%, 90%);
+    --page-bg: hsl(31, 53%, 90%);
     --page-bg-alt: hsl(30, 18%, 87%);
     --page-bg-alt-2: hsl(30, 18%, 94%);
 
@@ -68,9 +68,9 @@ main {
         grid-area: span 1 / span 2;
 
         & .recipe__img_box {
-            object-fit: cover;
+            
             overflow: hidden;
-            box-shadow: 0px 2px 6px #1111116e;
+            box-shadow: 0px 2px 6px #11111134;
             
 
             & img {
@@ -97,7 +97,9 @@ main {
                 font-size: clamp(2rem, 2vw, 3rem);
                 font-weight: 700;
                 color: var(--text-emphasis);
-                filter: drop-shadow(1px 1px 1px #1111116c);
+                text-shadow: 1px 1px 1px #1111115e;
+                /* filter: drop-shadow(1px 1px 1px #1111116c); */
+                background: radial-gradient(circle,rgba(228, 222, 216, 1) 0%, rgba(243, 230, 216, 1) 50%, rgba(255, 255, 255, 1) 100%);
                 
             }
 
@@ -255,9 +257,12 @@ main {
 .recipe__nutrition {
     grid-area: span 1 / span 2;
     padding: 2rem;
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(30, 18%, 87%));
+    border-radius: 1.5rem;
 
     & table {
-        
+        /* display: flex; */
+        border-collapse: collapse;
         
         & tr {
 
@@ -267,10 +272,15 @@ main {
                 font-size: clamp(2rem, 2vw, 3rem);
                 font-weight: 700;
                 filter: drop-shadow(1px 1px var(--text-emphasis));
+                padding-block-end: 1rem;
+                
+                height: 50px;
             }
 
             & .table_paragraph {
                 color: var(--text-base);
+                font-size: clamp(1rem, 1vw, 1.275rem);
+                padding-block-end: 1rem;
             }
         }
 
@@ -281,29 +291,28 @@ main {
             
 
             & td {
-        
-                
                 padding: 1rem;
                 border-bottom: 1px solid lightgrey;
-
-                
             }
 
             & .fat_row {
                 border-bottom: none;
-
-                
             }
 
-            & .fat_line {
-                border-bottom: none;
-            }
+            
 
             & td:last-child {
                 color: var(--heading);
                 font-weight: 700;
                 text-shadow: 1px 1px #11111133;
                 border-bottom: 1px solid lightgrey;
+            }
+        }
+
+        & tr:last-child {
+
+            & td:last-child {
+                border-bottom: none;
             }
         }
     }
@@ -322,16 +331,22 @@ main {
     }
 }
 
-@media (width >= 412px) {
+@media (width >= 412px) and (width <  768px) {
     
     main {
         padding-block: 2.5rem;
+        padding-block-end: initial;
     }
 
-   
+    .recipe__container {
+        box-shadow: var(--shadow-m);
+    }
+
+    
 
     .top-content {
         padding: 2.5rem;
+        border-radius: 1.5rem;
 
         & .recipe__img_box {
             border-radius: 0.75rem;
@@ -350,5 +365,50 @@ main {
 
     
     
+}
+
+@media (width >= 1440px) {
+    main {
+        padding-block: 4rem;
+    }
+
+    .recipe__container {
+        border-radius: 1.5rem;
+        box-shadow: var(--shadow-m);
+    }
+
+    .top-content {
+        padding: 2rem;
+    }
+
+    .recipe__img_box {
+        border-radius: 1.5rem 1.5rem 0 0;
+        
+        
+        overflow: hidden;
+
+        & img {
+            object-fit: cover;
+        }
+    }
+}
+
+@media (width >= 768px) and (width <= 1439px) {
+    main {
+        padding-block: 4rem;
+    }
+
+    .recipe__container {
+        box-shadow: var(--shadow-m);
+        border-radius: 1.5rem;
+    }
+
+    .top-content {
+        padding: 2rem;
+    }
+
+    .recipe__img_box {
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
 }
 
