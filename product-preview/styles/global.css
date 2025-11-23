@@ -33,6 +33,11 @@ body {
     --ff-main: 'Montserrat', sans-serif;
     --ff-secondary: 'Fraunces', cursive;
 
+    --shadow-sm: inset
+    0 1px 2px #ffffff30,
+    0 1px 2px #00000030,
+    0 2px 4px #00000015;
+
     --shadow-m: inset
     0 1px 2px hsl(330, 100%, 98%, 80%),
     0 2px 4px hsl(30, 10%, 34%, 40%),

@@ -4,8 +4,8 @@
     
 
     margin-inline: auto;
-    max-width: 46.875rem;
-    /* flex: 0 1 auto; */
+    max-width: 43.75rem;
+    flex: 0 1 auto;
     border-radius: 1.5rem;
     box-shadow: var(--shadow-m);
     background-color: var(--white-base);
@@ -13,9 +13,10 @@
     > picture {
         overflow: hidden;
         border-radius: 1.5rem 0 0 1.5rem;
+
         & img {
             display: block;
-            max-width: 23.438rem;
+            max-width: 21.875rem;
             width: 100%;
             object-fit: cover;
             border-radius: 1.5rem 0 0 1.5rem;
@@ -33,5 +34,88 @@
 
 .product__content {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 1rem; */
+
+    & .product__category {
+        font-family: var(--ff-main);
+        font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+        font-weight: 500;
+        color: var(--grey-base);
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+
+    
+    }
+
+    & .product__title {
+        font-family: var(--ff-secondary);
+        font-weight: 700;
+        font-size: clamp(2.5rem, 2vw + 0.8rem, 3rem);
+        color: var(--black-base);
+    }
+
+    & .product__description {
+        font-family: var(--ff-main);
+        font-weight: 500;
+        color: var(--grey-base);
+        font-size: clamp(0.875rem, 1vw + 0.5rem, 1.125rem);
+    }
+
+    & .product__pricing {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        
+
+        & #price {
+            font-family: var(--ff-secondary);
+            color: var(--lightgreen-base);
+            font-weight: 700;
+            font-size: clamp(2.5rem, 2vw, 3rem);
+        }
+
+        & .discount {
+            font-family: var(--ff-secondary);
+            text-decoration: line-through;
+            text-decoration-color: var(--grey-base);
+            color: var(--grey-base);
+            font-weight: 500;
+            font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+
+        }
+    }
+
+    & .button__box {
+        display: flex;
+        
+        
+        & .btn {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: var(--lightgreen-base);
+            font-family: var(--ff-main);
+            font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+            font-weight: 600;
+            color: var(--white-base);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            flex: 1;
+            border: none;
+            box-shadow: var(--shadow-sm);
+            
+            & img {
+                width: 18px;
+                height: 20px;
+            }
+
+            &:hover {
+                background-color: var(--darkgreen-base);
+            }
+        }
+    }
 }
 
