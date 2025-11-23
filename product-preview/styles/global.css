@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-block-size: 100vh;
+}
+
+:root {
+    --lightgreen-base: hsl(158, 36%, 37%);
+    --darkgreen-base: hsl(158, 42%, 18%);
+
+    --black-base: hsl(212, 21%, 14%);
+    --grey-base: hsl(228, 12%, 48%);
+    --cream-base: hsl(30, 38%, 92%);
+    --white-base: hsl(0, 0%, 100%);
+
+    --ff-main: 'Montserrat', sans-serif;
+    --ff-secondary: 'Fraunces', cursive;
+
+    --shadow-m: inset
+    0 1px 2px hsl(330, 100%, 98%, 80%),
+    0 2px 4px hsl(30, 10%, 34%, 40%),
+    0 4px 6px hsl(30, 10%, 34%, 15%);
+
+    --shadow-lg: inset
+    0 1px 2px hsl(330, 100%, 98%, 90%),
+    0 4px 6px hsl(30, 10%, 34%, 60%),
+    0 6px 8px hsl(30, 10%, 34%, 25%);
+}
