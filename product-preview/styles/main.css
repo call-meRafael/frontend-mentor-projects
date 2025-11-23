@@ -53,7 +53,8 @@
     & .product__title {
         font-family: var(--ff-secondary);
         font-weight: 700;
-        font-size: clamp(2.5rem, 2vw + 0.8rem, 3rem);
+        font-size: clamp(2rem, 2vw + 0.8rem, 3rem);
+        line-height: 100%;
         color: var(--black-base);
     }
 
@@ -74,7 +75,7 @@
             font-family: var(--ff-secondary);
             color: var(--lightgreen-base);
             font-weight: 700;
-            font-size: clamp(2.5rem, 2vw, 3rem);
+            font-size: clamp(2rem, 2vw, 3rem);
         }
 
         & .discount {
@@ -121,6 +122,63 @@
 
             }
         }
+    }
+}
+
+
+@media (max-width: 412px) {
+    body {
+        padding-inline: 1rem;
+        
+    }
+    .product {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .product > picture {
+        border-radius: 1.5rem 1.5rem 0 0;
+
+        & img {
+            display: block;
+            width: 100%;
+            max-width: 43.75rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            
+
+            &:hover {
+                border-radius: 1.5rem 1.5rem 0 0;
+            }
+        }
+
+        
+    }
+
+    .product__content {
+        gap: 1rem;
+    }
+}
+
+
+@media (min-width: 413px) and (max-width: 680px) {
+    body {
+        display: flex;
+        padding-inline: 1rem;
+    }
+    .product > picture {
+        display: flex;
+        width: 100%;
+        flex: 0 1 auto;
+
+        & img {
+            width: 100%;
+            flex: 1 1 auto;
+        }
+    }
+
+    .product__content {
+        gap: 1rem;
     }
 }
 
