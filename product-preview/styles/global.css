@@ -11,6 +11,15 @@ html, body {
     min-block-size: 100vh;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    
+    max-width: 90rem;
+    margin-inline: auto;
+    background-color: var(--cream-base);
+
+}
 
 :root {
     --lightgreen-base: hsl(158, 36%, 37%);
