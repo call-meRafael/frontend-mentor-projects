@@ -176,7 +176,7 @@
         border-radius: 1.5rem 1.5rem 0 0;
         width: 100%;
         flex: 1 1 auto;
-        border-radius: initial;
+        
 
         & img {
             display: block;
@@ -184,9 +184,12 @@
             width: 100%;
             max-width: 680px;
             max-height: 300px;
-            border-radius: initial;
             flex: 1 1 auto;
             aspect-ratio: 1/1;
+
+            &:hover {
+                border-radius: 1.5rem 1.5rem 0 0;
+            }
         }
     }
 
