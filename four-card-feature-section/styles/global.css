@@ -20,4 +20,21 @@ body {
     --white: hsl(0, 0%, 100%);
 
     --font-main: 'Poppins', sans-serif;
+
+    --shadow-lg: inset
+     0 4px 2px #ffffff70,
+     0 8px 6px #00000015,
+     0 10px 10px #00000008;
+}
+
+.container {
+    max-width: 90rem;
+    margin-inline: auto;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    padding: 1.5rem;
 }

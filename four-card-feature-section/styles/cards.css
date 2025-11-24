@@ -1,0 +1,24 @@
+.grid-cards {
+    --min-column-size: 23.125rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+    gap: 1.5rem;
+    
+
+    & .card-1 {
+        border-top-style: solid;
+        border-top-color: var(--cyan);
+    }
+    & .card-2 {
+        border-top-style: solid;
+        border-top-color: var(--red);
+    }
+    & .card-3 {
+        border-top-style: solid;
+        border-top-color: var(--orange);
+    }
+    & .card-4 {
+        border-top-style: solid;
+        border-top-color: var(--blue);
+    }
+}
