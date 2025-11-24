@@ -6,6 +6,7 @@
 
 body {
     font-family: var(--font-main);
+    min-height: 100dvh;
 }
 
 :root {
