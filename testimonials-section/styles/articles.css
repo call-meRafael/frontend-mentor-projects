@@ -1,6 +1,21 @@
 
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    grid-template-areas: 
+    "article01 article01 article03 article05";
+
+
+}
+
 .article-01 {
     background-color: var(--purple-500);
+    grid-area: article01;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-m);
+    position: relative;
 }
 .article-content {
     display: flex;
@@ -11,7 +26,7 @@
         height: 56px;
 
         border-radius: 50%;
-        border: 2px solid var(--grey-200);
+        border: 3px solid var(--grey-100);
         box-shadow: var(--shadow-m);
         overflow: hidden;
 
@@ -20,5 +35,11 @@
             object-fit: cover;
             width: 100%;
         }
+    }
+
+    & .quote-box {
+        position: absolute;
+        top: 4px;
+        right: 80px;
     }
 }
