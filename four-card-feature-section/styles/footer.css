@@ -7,7 +7,7 @@ footer {
 a {
     position: relative;
     text-decoration: none;
-    color: var(--darkgrey);
+    color: var(--orange);
 
     transition: hover 0.3s ease-in-out;
 
