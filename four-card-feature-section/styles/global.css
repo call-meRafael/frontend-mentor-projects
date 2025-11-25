@@ -38,3 +38,27 @@ body {
     box-shadow: var(--shadow-lg);
     padding: 1.5rem;
 }
+
+.card-content {
+    display: flex;
+    flex-flow: column wrap;
+
+    & h2 {
+        color: var(--darkgrey);
+        font-size: clamp(1.2rem, 1vw, 1.5rem);
+        font-weight: 600;
+        line-height: 150%;
+    }
+    & p {
+        color: var(--lightgrey);
+        font-size: clamp(0.875rem, 0.8vw, 1rem);
+        line-height: 150%;
+        font-weight: 400;
+    }
+}
+
+.img-box {
+    display: flex;
+    justify-content: flex-end;
+}
+

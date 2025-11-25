@@ -1,24 +1,47 @@
 .grid-cards {
-    --min-column-size: 23.125rem;
+    --min-column-size: 21.875rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
     gap: 1.5rem;
+    padding-inline: 10.687rem;
     
 
     & .card-1 {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2.5rem;
+        
         border-top-style: solid;
+        border-top-width: 4px;
         border-top-color: var(--cyan);
     }
     & .card-2 {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2.5rem;
+
         border-top-style: solid;
+        border-top-width: 4px;
         border-top-color: var(--red);
     }
     & .card-3 {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2rem;
+
         border-top-style: solid;
+        border-top-width: 4px;
         border-top-color: var(--orange);
     }
     & .card-4 {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2rem;
+
         border-top-style: solid;
+        border-top-width: 4px;
         border-top-color: var(--blue);
     }
+
+    
 }
