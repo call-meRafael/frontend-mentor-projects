@@ -1,0 +1,24 @@
+
+.article-01 {
+    background-color: var(--purple-500);
+}
+.article-content {
+    display: flex;
+    gap: 1.5rem;
+
+    & .profile-photo-box {
+        width: 56px;
+        height: 56px;
+
+        border-radius: 50%;
+        border: 2px solid var(--grey-200);
+        box-shadow: var(--shadow-m);
+        overflow: hidden;
+
+        & img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
