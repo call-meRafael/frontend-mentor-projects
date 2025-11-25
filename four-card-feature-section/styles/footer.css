@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--darkgrey);
+
+    transition: hover 0.3s ease-in-out;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        display: inline-block;
+        border-radius: 4px;
+
+        width: 100%;
+        height: 3px;
+        background-color: var(--cyan);
+        
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: right center;
+
+        transition: opacity 0.35s ease, transform 0.35s ease;
+  
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform: scaleX(1);
+
+    }
+}
+
+.attribution {
+    font: 400 clamp(0.75rem, 1vw, 0.938rem)/150% var(--font-main);
+}
