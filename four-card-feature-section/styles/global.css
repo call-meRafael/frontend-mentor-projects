@@ -36,9 +36,9 @@ body {
     --font-main: 'Poppins', sans-serif;
 
     --shadow-lg: inset
-     0 4px 2px #ffffff70,
-     0 8px 6px #00000015,
-     0 10px 10px #00000008;
+     0 6px 8px #ffffff50,
+     0 10px 6px #00000015,
+     0 12px 20px #00000008;
 }
 
 .container {
