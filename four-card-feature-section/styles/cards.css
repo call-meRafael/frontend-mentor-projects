@@ -1,47 +1,71 @@
 .grid-cards {
-    --min-column-size: 21.875rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
-    gap: 1.5rem;
-    padding-inline: 10.687rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-template-areas: 
+    "card01 card02 card04"
+    "card01 card03 card04";
+    
+    align-items: center;
     
 
     & .card-1 {
         display: flex;
         flex-flow: column wrap;
         gap: 2.5rem;
+        grid-area: card01;
         
         border-top-style: solid;
         border-top-width: 4px;
         border-top-color: var(--cyan);
+
+        min-height: 250px;
     }
     & .card-2 {
         display: flex;
         flex-flow: column wrap;
         gap: 2.5rem;
+        grid-area: card02;
 
         border-top-style: solid;
         border-top-width: 4px;
         border-top-color: var(--red);
+
+        min-height: 250px;
     }
     & .card-3 {
         display: flex;
         flex-flow: column wrap;
         gap: 2rem;
+        grid-area: card03;
 
         border-top-style: solid;
         border-top-width: 4px;
         border-top-color: var(--orange);
+
+        min-height: 250px;
     }
     & .card-4 {
         display: flex;
         flex-flow: column wrap;
         gap: 2rem;
+        grid-area: card04;
 
         border-top-style: solid;
         border-top-width: 4px;
         border-top-color: var(--blue);
+
+        min-height: 250px;
     }
 
-    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card01"
+        "card02"
+        "card03"
+        "card04";
+        gap: 2rem;
+        padding-inline: 1rem;
+    }
 }
