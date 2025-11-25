@@ -5,8 +5,22 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
     font-family: var(--font-main);
-    min-height: 100dvh;
+    min-height: 100vh;
+    padding-block: 5rem;
+    padding-inline: 2rem;
+
+    @media (min-width: 324px) and (max-width: 480px) {
+        padding-block: 2rem;
+        padding-inline: 1rem;
+    }
+
+    @media (max-width: 323px) {
+        padding-inline: 0.2rem;
+        padding-block: 1rem;
+    }
 }
 
 :root {
@@ -28,7 +42,7 @@ body {
 }
 
 .container {
-    max-width: 90rem;
+    max-width: 69.375rem;
     margin-inline: auto;
 }
 
@@ -61,4 +75,6 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
+
 
