@@ -12,6 +12,7 @@ html:focus-within {
 
 body {
     display: grid;
+    background-color: var(--neutral-100);
     place-content: center;
     min-height: 100vh;
 
@@ -24,10 +25,12 @@ body {
     --color-secondary-400: hsl(264, 82%, 80%);
     --color-tertiary-50: hsl(260, 100%, 95%);
 
-    --neutral-100: hsl(214, 17%, 92%);
-    --neutral-200: hsl(0, 0%, 81%);
-    --neutral-400: hsl(224, 10%, 45%);
-    --neutral-500: hsl(217, 19%, 35%);
+    --white: hsl(0, 0%, 100%);
+
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
 
     --darkblue: hsl(219, 29%, 14%);
     --black: hsl(0, 0%, 7%);
@@ -38,6 +41,12 @@ body {
     --fw-600: 600;
 
     --fs-primary: clamp(1rem, 1vw, 1.25rem);
-    --fs-secondary: clamp(0.8125rem, 0.8vw, 0.875rem);
+    --fs-secondary: clamp(0.999rem, 0.8vw, 0.978rem);
+    --fs-tertiary: clamp(0.8125rem, 0.7vw, 0.925rem);
+
+    --shadow-l: inset
+    0 1px 2px hsla(0, 0%, 100%, 0.699), 
+    0 4px 6px hsla(0, 0%, 7%, 0.308),
+    0 6px 10px hsla(0, 0%, 7%, 0.164);
 
 }

@@ -17,5 +17,9 @@
 }
 
 .name {
-    font: var(--fw-600) var(--fs-secondary)/1 var(--ff-main);
+    font: var(--fw-600) var(--fs-secondary)/1.2 var(--ff-main);
 }
+
+.graduate {
+    font: var(--fw-600) var(--fs-tertiary)/1.2 var(--ff-main);
+} 
