@@ -1,0 +1,21 @@
+.bg-clr-primary {
+    background: var(--color-primary-500);
+}
+.quote {
+    background-image: url(../assets/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+.flex {
+    display: flex;
+    /* gap: var(--gap, 1rem); */
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.name {
+    font: var(--fw-600) var(--fs-secondary)/1 var(--ff-main);
+}
