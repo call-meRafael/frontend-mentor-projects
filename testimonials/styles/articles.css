@@ -24,7 +24,7 @@
                 display: flex;
                 flex-flow: column wrap;
                 gap: 0.225rem;
-                & h2 {
+                & h1 {
                     color: var(--white);
                     opacity: .8;
 
@@ -79,6 +79,14 @@
     /* ----- Jonathan Walters ----- */
     [data-author="jonathan"] {
         grid-area: jonathan;
+
+        & .testimonial-content {
+
+            & h2[data-content="jonathan-walters"] {
+                color: var(--white);
+                opacity: .8;
+            }
+        }
     }
     
     /* ----- Jeanette Harmon ----- */
