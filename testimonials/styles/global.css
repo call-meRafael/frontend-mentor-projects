@@ -15,6 +15,7 @@ body {
     background-color: var(--neutral-100);
     place-content: center;
     min-height: 100vh;
+    padding-block: 2rem;
 
     text-rendering: optimizeSpeed;
     
