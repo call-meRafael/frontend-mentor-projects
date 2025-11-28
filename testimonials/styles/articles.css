@@ -2,9 +2,10 @@
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    width: min(95%, 70rem);
+    width: min(95%, 75rem);
     margin-inline: auto;
     border-radius: 0.5rem;
+    padding-block: 2rem;
 
     & .testimonial {
         padding: 2rem;
@@ -14,9 +15,10 @@
         & .testimonial-content {
             
             &>:first-child img {
-                width: 2.5rem;
+                width: 3rem;
                 border-radius: 50%;
                 border: 2px solid var(--color-secondary-400);
+                aspect-ratio: 1/1;
             }
             &>:nth-child(2) {
                 display: flex;
@@ -32,11 +34,25 @@
                     opacity: .5;
                 }
             }
+            
+            /* ----- Profile pics borders ----- */
+            & .profile-pic[data-user="walters"] {
+                border: none;
+            }
+            & .profile-pic[data-user="harmon"] {
+                border: none;
+            }
+            & .profile-pic[data-user="abrams"] {
+                border: 2px solid var(--color-primary-500);
+            }
+            & .profile-pic[data-user="whittle"] {
+                border: none;
+            }
         }
 
         & > p:first-of-type {
             font-family: var(--ff-main);
-            font-weight: 700;
+            font-weight: 600;
             font-size: clamp(1.25rem, 2vw, 1.5rem);
             line-height: 1.2;
             margin-top: .8rem;
@@ -55,4 +71,162 @@
         }
     }
 
+    /* ----- Daniel Clifford ----- */
+    [data-author="daniel"] {
+        grid-area: daniel;
+    }
+
+    /* ----- Jonathan Walters ----- */
+    [data-author="jonathan"] {
+        grid-area: jonathan;
+    }
+    
+    /* ----- Jeanette Harmon ----- */
+    [data-author="jeanette"] {
+        grid-row: 2 / 3;
+        grid-area: jeanette;
+
+        & .testimonial-content {
+            
+            & h2[data-content="jeanette-harmon"] {
+                color: var(--grey-500);
+                opacity: .8;
+            }
+
+            & p[data-content="grade-j"] {
+                color: var(--grey-500);
+                opacity: .8;
+            }
+        }
+            
+
+            
+        & > p:first-of-type {
+            color: var(--darkblue);
+            opacity: 0.8;
+        }
+        & > p:last-of-type {
+            color: var(--grey-400);
+        }
+    }
+
+    /* ----- Patrick Abrams ----- */
+    [data-author="patrick"] {
+        grid-area: patrick;
+
+        & .testimonial-content {
+            
+            & h2[data-content="patrick-abrams"] {
+                color: var(--white);
+                opacity: .8;
+            }
+
+            & p[data-content="grade-p"] {
+                color: var(--white);
+                opacity: .7;
+            }
+        }
+
+
+
+        & > p:first-of-type {
+            color: var(--white);
+            opacity: 0.9;
+        }
+        & > p:last-of-type {
+            color: var(--white);
+            opacity: 0.7;
+        }
+    }
+
+    /* ----- kira whittle ----- */
+    [data-author="kira"] {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+        grid-area: kira;
+
+        & .testimonial-content {
+            
+            & h2[data-content="kira-whittle"] {
+                color: var(--grey-500);
+                opacity: .8;
+            }
+
+            & p[data-content="grade-k"] {
+                color: var(--grey-500);
+                opacity: .7;
+            }
+        }
+
+        & > p:first-of-type {
+            color: var(--darkblue);
+            opacity: 0.8;
+        }
+        & > p:last-of-type {
+            color: var(--grey-400);
+            
+        }
+    }
+
+
+
 }
+
+@media (min-width: 33rem) {
+
+    .testimonials-grid {
+        grid-template-areas: 
+        "daniel daniel"
+        "jonathan jeanette"
+        "kira kira"
+        "patrick patrick";
+    }
+}
+
+@media (min-width: 38rem) {
+    .testimonials-grid {
+        grid-template-areas: 
+        "daniel daniel"
+        "jonathan kira"
+        "jeanette kira"
+        "patrick patrick";
+    }
+}
+
+@media (min-width: 54rem) {
+
+    .testimonials-grid {
+        grid-template-areas: 
+        "daniel daniel jonathan"
+        "kira kira kira"
+        "jeanette patrick patrick";
+    }
+}
+
+@media (min-width: 75rem) {
+
+    .testimonials-grid {
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    }
+}
+
+@media (min-width: 20rem) and (max-width: 32.938rem) {
+
+
+    .testimonials-grid {
+        padding-inline: 1rem;
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+
+        & .quote {
+            background-image: none;
+        }
+    }
+}
+
