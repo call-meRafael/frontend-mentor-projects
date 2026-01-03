@@ -4,17 +4,24 @@ body {
     margin-inline: auto;
     min-height: 100dvh;
     max-width: 90rem;
+
+    background-color: hsl(210, 46%, 95%);
 }
 
 .card-wraper {
     display: flex;
-    
+    border-radius: .625rem;
+    box-shadow: 0px 10px 40px -10px #9e9d9d77;
+
+    background-color: #ffffff;
+
+    /* border: 1px solid #00000014; */
 
     max-width: 45.625rem;
 
     & .hero-img {
         width: 17.8125rem;
-        height: auto;
+        
         
         object-fit: cover;
         object-position: left;
@@ -23,12 +30,68 @@ body {
     }
 
     & .article-content {
-        padding: 1rem;
+        display: flex;
+        flex-flow: column wrap;
+        gap: .625rem;
+        padding: 2rem;
 
-        & .article-title-call {
-            font: var(--fw-bold) var(--fs-lg)/130% var(--ff-main);
+        & .article-title {
+            font-family: var(--ff-main);
+            font-weight: var(--fw-bold);
+            font-size: var(--fs-lg);
+            color: var(--dark-gray-blue);
         }
 
-        & .article-
+        & .article-description {
+            font-family: var(--ff-main);
+            font-weight: var(--fw-base);
+            font-size: var(--fs-sm);
+            color: var(--desaturated-dark-blue);
+        }
+
+        & .article-author {
+            display: flex;
+            align-items: center;
+
+            margin-top: .5rem;
+
+            & .author-description {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                & img {
+                    width: 3rem;
+                    border-radius: 50%;
+                }
+
+                & .author-name {
+                    font-family: var(--ff-main);
+                    color: var(--dark-gray-blue);
+                }
+
+                & .publish-when {
+                    font-family: var(--ff-main);
+                    color: var(--desaturated-dark-blue);
+                }
+            }
+
+            & .share-btn {
+                margin-left: 10rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                & button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: hsl(210, 46%, 95%);
+                }
+            }
+        }
     }
 }
