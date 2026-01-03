@@ -1,0 +1,34 @@
+body {
+    display: grid;
+    place-content: center;
+    margin-inline: auto;
+    min-height: 100dvh;
+    max-width: 90rem;
+}
+
+.card-wraper {
+    display: flex;
+    
+
+    max-width: 45.625rem;
+
+    & .hero-img {
+        width: 17.8125rem;
+        height: auto;
+        
+        object-fit: cover;
+        object-position: left;
+        border-top-left-radius: 0.625rem;
+        border-bottom-left-radius: 0.625rem;
+    }
+
+    & .article-content {
+        padding: 1rem;
+
+        & .article-title-call {
+            font: var(--fw-bold) var(--fs-lg)/130% var(--ff-main);
+        }
+
+        & .article-
+    }
+}
