@@ -37,17 +37,17 @@ input, button, textarea, select {
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+/* p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
-}
+} */
 
 /* 9. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
-}
+} */
 
 /*
   10. Create a root stacking context
@@ -67,9 +67,11 @@ h1, h2, h3, h4, h5, h6 {
     /* TYPOGRAPHY  */
     --ff-main: 'Manrope', sans-serif;
     --fs-sm: 0.813rem;
+    --fs-md: 1.1rem;
     --fs-lg: 1.313rem;
     --fw-base: 500;
     --fw-bold: 700;
-
+    
+    /* SHADOWS */
     --shadow-md: 0px 10px 40px -10px #9e9d9d77;
 }
