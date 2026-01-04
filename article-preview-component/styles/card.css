@@ -76,12 +76,12 @@ body {
                 }
             }
 
-            & .share-btn {
+            & .share-box {
                 margin-left: 10rem;
                 width: 2.5rem;
                 height: 2.5rem;
 
-                & button {
+                & .btn-share {
                     display: flex;
                     justify-content: center;
                     align-items: center;
