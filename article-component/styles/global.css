@@ -76,3 +76,11 @@ p {
     /* SHADOWS */
     --shadow-md: 0px 10px 40px -10px #9e9d9d77;
 }
+
+/* Classes */
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+
+}
