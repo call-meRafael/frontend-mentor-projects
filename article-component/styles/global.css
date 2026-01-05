@@ -37,9 +37,9 @@ input, button, textarea, select {
 }
 
 /* 8. Avoid text overflows */
-/* p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
-} */
+}
 
 /* 9. Improve line wrapping */
 p {
@@ -67,8 +67,9 @@ p {
     /* TYPOGRAPHY  */
     --ff-main: 'Manrope', sans-serif;
     --fs-sm: 0.813rem;
-    --fs-md: 1.1rem;
+    --fs-md: 1.125rem;
     --fs-lg: 1.313rem;
+    --fs-xl: 1.414rem;
     --fw-base: 500;
     --fw-bold: 700;
     
