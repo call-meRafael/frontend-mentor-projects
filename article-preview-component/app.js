@@ -1,1 +1,0 @@
-const btnShare = document.querySelector('.')
