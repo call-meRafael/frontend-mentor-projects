@@ -212,3 +212,14 @@ body {
 
 }
 
+@media (max-width: 22.563rem) {
+    .share-popup {
+        height: 80px;
+    }
+
+    .share-btn {
+        position: absolute;
+        right: 5px;
+    }
+}
+
