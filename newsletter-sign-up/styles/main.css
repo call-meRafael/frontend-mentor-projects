@@ -1,0 +1,27 @@
+body {
+    min-height: 100dvh;
+    font-family: var(--ff-main);
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    place-content: center;
+    width: 100%;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: column wrap;
+
+    & picture {
+        max-width: 100%;
+        align-self: stretch;
+    }
+}
+
