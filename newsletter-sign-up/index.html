@@ -13,31 +13,60 @@
     <main>
         <section class="card-container">
             <div class="form-container">
-                <h1>Stay updated!</h1>
-                <p>
-                    Join 60,000+ more product managers receiving monthly updates on:
-                </p>
+                <div class="form-text">
+                    <h1 class="form-title">Stay updated!</h1>
+                    <p class="form-call">
+                        Join 60,000+ more product managers receiving monthly updates on:
+                    </p>
+    
+                    <ul>
+                        <li>
+                            <img src="./assets/images/icon-list.svg" alt="list icon">
+                            <p>
+                                Product discovery and building what matters
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icon-list.svg" alt="list icon">
+                            <p>
+                                Measuring to ensure the updates are a success
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icon-list.svg" alt="list icon">
+                            <p>
+                                And much more!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <li>
-                        <img src="./assets/images/icon-list.svg" alt="list icon">
-                        <p>
-                            Product discovery and building what matters
-                        </p>
-                    </li>
-                    <li>
-                        <img src="./assets/images/icon-list.svg" alt="list icon">
-                        <p>
-                            Measuring to ensure the updates are a success
-                        </p>
-                    </li>
-                    <li>
-                        <img src="./assets/images/icon-list.svg" alt="list icon">
-                        <p>
-                            And much more!
-                        </p>
-                    </li>
-                </ul>
+                
+                <form method="post">
+                    <div class="form-email-container">
+                        <label class="email-label" for="iEmail">Email adress</label>
+                        <strong
+                            class="error-message hidden"
+                            role="alert"
+                        >
+                            Email required
+                        </strong>
+                    </div>
+                    <input 
+                        type="email"
+                        name="email"
+                        id="iEmail"
+                        class="email-input"
+                        placeholder="email@company.com"
+                        aria-errormessage="error-message"
+                    >
+    
+                        
+                </form>
+                <button type="submit">
+                    Subscribe to monthly newsletter
+                </button>
+                
             </div>
             <picture class="--img-box">
                 <source 
