@@ -85,4 +85,9 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Typography */
     --ff-main: 'Roboto', sans-serif;
+
+    --fw-base: 400;
+    --fw-bold: 700;
+
+    --fs-base: 1rem;
 }
