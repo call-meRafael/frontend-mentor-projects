@@ -1,0 +1,100 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    touch-action: manipulation;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto-Regular.ttf) format(truetype);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto-Bold.ttf) format(truetype);
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    /* Colors */
+    --prim-red: hsl(4, 100%, 67%);
+    --sec-red: hsl(6, 72%, 94%);
+    --grad-red: linear-gradient( 
+        45deg,
+        hsl(15, 100%, 61%),
+        hsl(346, 100%, 66%)
+    );
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%,58%);
+
+    /* Typography */
+    --ff-main: 'Roboto', sans-serif;
+
+    --fw-base: 400;
+    --fw-bold: 700;
+
+    --fs-base: 1rem;
+}
+
+
+/* Custom Classes */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.cols-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.rows-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.gap-0-5 {
+    gap: 0.5rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-1-5 {
+    gap: 1.5rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+
+.start {
+    align-items: start;
+}

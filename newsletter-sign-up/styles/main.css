@@ -1,6 +1,5 @@
 body {
     display: flex;
-    flex-direction: column;
     min-height: 100dvh;
     font-family: var(--ff-main);
     background-color: var(--blue-700);
