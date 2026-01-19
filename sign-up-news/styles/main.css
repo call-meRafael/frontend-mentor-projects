@@ -144,12 +144,12 @@ main {
 
         & label {
             font-weight: var(--fw-bold);
-            font-size: .838rem;
+            font-size: .75rem;
         }
 
         & .alert-msg {
             color: var(--prim-red);
-            font-size: .838rem;
+            font-size: .75rem;
         }
         
     }

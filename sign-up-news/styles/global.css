@@ -64,6 +64,7 @@ img, picture, video, canvas, svg {
     /* Shadows */
     --shdw-card: 0 1rem 3rem hsla(0, 0%, 10%, 0.404);
     --shdw-btn: 0 1rem 2rem 0 hsla(4, 100%, 67%, 0.596);
+    --shdw-error: 0 10px 10px -10px var(--sec-red);
 }
 
 
@@ -74,9 +75,10 @@ img, picture, video, canvas, svg {
 }
 
 .error-state {
-    color: var(--prim-red);
-    background-color: var(--prim-red);
+    
+    background-color: var(--sec-red);
     border-color: var(--prim-red);
+    box-shadow: 0 10px 10px -10px var(--sec-red)
 
 }
 
