@@ -26,12 +26,12 @@
                     type="image/svg+xml"
                     >
 
-                    <img src="./assets/images/mobile.svg" alt="">
+                    <img class="hero-img" src="./assets/images/mobile.svg" alt="">
                 </picture>
             </div>
 
             <div class="form-container">
-                <div class="form-text cols-1 gap-1">
+                <div class="form-text">
                     <h1 class="form-title">
                         Stay updated!
                     </h1>
@@ -39,20 +39,20 @@
                         Join 60,000+ more product managers receiving monthly updates on:
                     </p>
 
-                    <ul class="form-bullets cols-1 gap-0-5">
-                        <li class="rows-1 gap-1 start">
+                    <ul class="form-bullets">
+                        <li>
                             <img src="./assets/images/icon-list.svg" alt="">
                             <p>
                                 Product discovery and building what matters
                             </p>
                         </li>
-                        <li class="rows-1 gap-1 start">
+                        <li>
                             <img src="./assets/images/icon-list.svg" alt="">
                             <p>
                                 Measuring to ensure the updates are a success
                             </p>
                         </li>
-                        <li class="rows-1 gap-1 start">
+                        <li>
                             <img src="./assets/images/icon-list.svg" alt="">
                             <p>
                                 And much more!
@@ -60,9 +60,30 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="--form">
+                    <form class="--form-content"  method="post">
+                        <div class="input-box">
+                            <label for="iEmail">Email adress</label>
+                            <strong class="alert-msg hidden">Valid email required</strong>
+                        </div>
+                            <input 
+                            class="email-input"
+                            type="email" 
+                            name="email" 
+                            id="iEmail" 
+                            placeholder="email@company.com"
+                            autocomplete="on"
+                            >
+                        <button id="btn-submit" type="submit">Subscribe for monthly newsletter</button>
+                    </form>
+                </div>
             </div>
 
         </section>
     </main>
+
+
+    <script src="app.js"></script>
 </body>
 </html>

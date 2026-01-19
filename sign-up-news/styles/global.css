@@ -42,15 +42,12 @@ img, picture, video, canvas, svg {
     font-display: swap;
 }
 
+
 :root {
     /* Colors */
     --prim-red: hsl(4, 100%, 67%);
     --sec-red: hsl(6, 72%, 94%);
-    --grad-red: linear-gradient( 
-        45deg,
-        hsl(15, 100%, 61%),
-        hsl(346, 100%, 66%)
-    );
+    --grad-red: linear-gradient(to right, hsl(15, 100%, 61%), hsl(346, 100%, 66%));
     --blue-800: hsl(234, 29%, 20%);
     --blue-700: hsl(235, 18%, 26%);
     --white: hsl(0, 0%, 100%);
@@ -63,13 +60,24 @@ img, picture, video, canvas, svg {
     --fw-bold: 700;
 
     --fs-base: 1rem;
+
+    /* Shadows */
+    --shdw-card: 0 1rem 3rem hsla(0, 0%, 10%, 0.404);
+    --shdw-btn: 0 1rem 2rem 0 hsla(4, 100%, 67%, 0.596);
 }
 
 
-/* Custom Classes */
+/* Utility Classes */
 .hidden {
   display: none;
   visibility: hidden;
+}
+
+.error-state {
+    color: var(--prim-red);
+    background-color: var(--prim-red);
+    border-color: var(--prim-red);
+
 }
 
 .cols-1 {
@@ -80,21 +88,4 @@ img, picture, video, canvas, svg {
 .rows-1 {
     display: flex;
     flex-direction: row;
-}
-
-.gap-0-5 {
-    gap: 0.5rem;
-}
-.gap-1 {
-    gap: 1rem;
-}
-.gap-1-5 {
-    gap: 1.5rem;
-}
-.gap-2 {
-    gap: 2rem;
-}
-
-.start {
-    align-items: start;
 }
