@@ -5,7 +5,7 @@ const errorMsg = document.querySelector('.alert-msg');
 const successCard = document.querySelector('.success-card');
 const emailSuccess = document.querySelector('.email-success');
 
-const submitBtn = document.getElementById('btn-submit');
+
 const dismissBtn = document.getElementById('dismiss-btn');
 
 
@@ -31,15 +31,26 @@ form.addEventListener('submit', (e) => {
         emailInput.classList.add('error-state');
         emailInput.style.borderColor = 'var(--prim-red)';
         return;
-    } 
+    } else {
+        errorMsg.classList.add('hidden');
+        emailInput.classList.remove('error-state');
+        emailInput.style.borderColor = 'var(--gray)';
 
-    emailSuccess.textContent = email;
-    successCard.classList.remove('hidden');
+        cardContainer.classList.add('hidden');
+        
+
+        setTimeout(() => {
+            successCard.classList.remove('hidden');
+            emailSuccess.textContent = email;  
+        }, 0);
+    }
+
 
 })
 
 dismissBtn.addEventListener('click', function () {
     successCard.classList.add('hidden');
+    cardContainer.classList.remove('hidden');
     form.reset();
 })
 
