@@ -16,6 +16,7 @@ main {
     flex-wrap: wrap;
     
     margin-inline: auto;
+    position: relative;
     
 
     @media (min-width: 34.313rem) and (max-width: 47.938rem) {
@@ -184,6 +185,62 @@ main {
         cursor: pointer;
 
         transition: all 0.2s ease;
+
+        &:hover {
+            background-image: var(--grad-red);
+            padding: 1rem;
+            border: none;
+            box-shadow: var(--shdw-btn);
+        }
+
+        &:active, &:focus {
+            background-image: var(--grad-red);
+            padding: 1rem;
+            border: none;
+        }
+    }
+}
+
+
+.success-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+
+    min-height: 100dvh;
+    padding-inline: 2rem;
+    padding-block: 3.5rem;
+    background-color: var(--white);
+
+    & img {
+        max-width: 3rem;
+    }
+
+    & .success-card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 10rem;
+
+
+        & h1 {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+    }
+
+
+    & #dismiss-btn {
+        display: inline-block;
+        outline: none;
+        border: none;
+        background-color: var(--blue-800);
+        color: var(--white);
+        padding: 1rem;
+        font-weight: var(--fw-bold);
+        border-radius: .7rem;
+        cursor: pointer;
 
         &:hover {
             background-image: var(--grad-red);
